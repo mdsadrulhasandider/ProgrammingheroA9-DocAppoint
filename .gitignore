@@ -19,3 +19,7 @@ yarn-error.log*
 *.sln
 *.sw?
 .DS_Store
+
+# Local Development Guides
+ASSIGNMENT_REQUIREMENTS.md
+IMPLEMENTATION_PLAN.md

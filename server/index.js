@@ -15,7 +15,7 @@ app.use(cors({
         // Allow requests with no origin (like mobile apps, server-to-server)
         if (!origin) return callback(null, true);
         
-        const allowedOrigins = [
+              const allowedOrigins = [
             'http://localhost:5173',
             'http://127.0.0.1:5173',
             'http://localhost:5174',
@@ -25,6 +25,7 @@ app.use(cors({
             'https://doc-appoint-client-seven.vercel.app',
             'https://programminghero-a9-doc-appoint.vercel.app'
         ];
+
         
         // Accept exact match or any localhost/127.0.0.1 port number
         if (allowedOrigins.indexOf(origin) !== -1 || /^http:\/\/localhost:\d+$/.test(origin) || /^http:\/\/127\.0\.0\.1:\d+$/.test(origin)) {

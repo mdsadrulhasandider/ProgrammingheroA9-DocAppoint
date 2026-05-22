@@ -22,7 +22,8 @@ app.use(cors({
             'http://127.0.0.1:5174',
             'http://localhost:5175',
             'http://127.0.0.1:5175',
-            'https://doc-appoint-client-seven.vercel.app'
+            'https://doc-appoint-client-seven.vercel.app',
+            'https://programminghero-a9-doc-appoint.vercel.app'
         ];
         
         // Accept exact match or any localhost/127.0.0.1 port number

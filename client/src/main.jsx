@@ -5,7 +5,7 @@ import './index.css'
 import App from './App.jsx'
 
 // Set global base URL for Axios calls dynamically for easy deployment
-axios.defaults.baseURL = import.meta.env.VITE_API_URL || 'http://localhost:5000';
+axios.defaults.baseURL = import.meta.env.VITE_API_URL || (import.meta.env.PROD ? 'https://doc-appoint-server-new.onrender.com' : 'http://localhost:5000');
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
